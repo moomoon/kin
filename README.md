@@ -12,7 +12,7 @@ class A: Activity() {
 }
 
 class B: Activity() {
-  val value: Int by Kin.Int()
+  val value: Int by Kin.Int(defaultValue = -1)
   
   fun magicFunction() = Toast.makeText(this, "value = $value", Toast.LENGTH_SHORT).show()
 }
